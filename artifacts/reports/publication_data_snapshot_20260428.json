@@ -1,0 +1,321 @@
+{
+  "overview": {
+    "total_events": 43269,
+    "coverage_years": 42.27,
+    "strongest_magnitude": 8.2,
+    "strong_event_count": 179,
+    "first_event_at_utc": "1984-01-02T03:51:52Z",
+    "latest_event_at_utc": "2026-04-11T13:01:05Z",
+    "avg_events_per_year": 1023.63
+  },
+  "descriptive_findings": [
+    "The current persisted dataset spans 42.27 years of historical evidence and organizes 43,269 curated events into a bounded local-first publication surface.",
+    "The strongest historical concentration currently appears in Baja California / Gulf of California with 24,175 recorded events in the present curated dataset.",
+    "The strongest magnitude currently represented in the persisted dataset is 8.20, and 179 events meet or exceed the current strong-event descriptive threshold of 6.0.",
+    "The current baseline publication layer prioritizes traceability, structured authority, and descriptive probabilistic reading rather than deterministic forecasting or official warning semantics."
+  ],
+  "monthly_activity": {
+    "all_events": [
+      {
+        "month": 1,
+        "event_count": 3470
+      },
+      {
+        "month": 2,
+        "event_count": 3610
+      },
+      {
+        "month": 3,
+        "event_count": 3500
+      },
+      {
+        "month": 4,
+        "event_count": 5603
+      },
+      {
+        "month": 5,
+        "event_count": 3958
+      },
+      {
+        "month": 6,
+        "event_count": 3308
+      },
+      {
+        "month": 7,
+        "event_count": 3437
+      },
+      {
+        "month": 8,
+        "event_count": 3203
+      },
+      {
+        "month": 9,
+        "event_count": 3692
+      },
+      {
+        "month": 10,
+        "event_count": 3015
+      },
+      {
+        "month": 11,
+        "event_count": 3271
+      },
+      {
+        "month": 12,
+        "event_count": 3202
+      }
+    ],
+    "strong_events": [
+      {
+        "month": 1,
+        "strong_event_count": 18
+      },
+      {
+        "month": 2,
+        "strong_event_count": 10
+      },
+      {
+        "month": 3,
+        "strong_event_count": 11
+      },
+      {
+        "month": 4,
+        "strong_event_count": 18
+      },
+      {
+        "month": 5,
+        "strong_event_count": 23
+      },
+      {
+        "month": 6,
+        "strong_event_count": 13
+      },
+      {
+        "month": 7,
+        "strong_event_count": 18
+      },
+      {
+        "month": 8,
+        "strong_event_count": 10
+      },
+      {
+        "month": 9,
+        "strong_event_count": 27
+      },
+      {
+        "month": 10,
+        "strong_event_count": 10
+      },
+      {
+        "month": 11,
+        "strong_event_count": 10
+      },
+      {
+        "month": 12,
+        "strong_event_count": 11
+      }
+    ]
+  },
+  "yearly_strong_activity": {
+    "strong_counts_by_year": [
+      {
+        "year": 1984,
+        "strong_event_count": 6
+      },
+      {
+        "year": 1985,
+        "strong_event_count": 3
+      },
+      {
+        "year": 1986,
+        "strong_event_count": 4
+      },
+      {
+        "year": 1987,
+        "strong_event_count": 3
+      },
+      {
+        "year": 1988,
+        "strong_event_count": 1
+      },
+      {
+        "year": 1989,
+        "strong_event_count": 3
+      },
+      {
+        "year": 1990,
+        "strong_event_count": 3
+      },
+      {
+        "year": 1991,
+        "strong_event_count": 3
+      },
+      {
+        "year": 1992,
+        "strong_event_count": 1
+      },
+      {
+        "year": 1993,
+        "strong_event_count": 9
+      },
+      {
+        "year": 1994,
+        "strong_event_count": 5
+      },
+      {
+        "year": 1995,
+        "strong_event_count": 10
+      },
+      {
+        "year": 1996,
+        "strong_event_count": 3
+      },
+      {
+        "year": 1997,
+        "strong_event_count": 6
+      },
+      {
+        "year": 1998,
+        "strong_event_count": 5
+      },
+      {
+        "year": 1999,
+        "strong_event_count": 7
+      },
+      {
+        "year": 2000,
+        "strong_event_count": 3
+      },
+      {
+        "year": 2001,
+        "strong_event_count": 5
+      },
+      {
+        "year": 2002,
+        "strong_event_count": 3
+      },
+      {
+        "year": 2003,
+        "strong_event_count": 5
+      },
+      {
+        "year": 2004,
+        "strong_event_count": 1
+      },
+      {
+        "year": 2005,
+        "strong_event_count": 2
+      },
+      {
+        "year": 2006,
+        "strong_event_count": 3
+      },
+      {
+        "year": 2007,
+        "strong_event_count": 4
+      },
+      {
+        "year": 2008,
+        "strong_event_count": 3
+      },
+      {
+        "year": 2009,
+        "strong_event_count": 6
+      },
+      {
+        "year": 2010,
+        "strong_event_count": 4
+      },
+      {
+        "year": 2011,
+        "strong_event_count": 4
+      },
+      {
+        "year": 2012,
+        "strong_event_count": 10
+      },
+      {
+        "year": 2013,
+        "strong_event_count": 5
+      },
+      {
+        "year": 2014,
+        "strong_event_count": 9
+      },
+      {
+        "year": 2015,
+        "strong_event_count": 3
+      },
+      {
+        "year": 2016,
+        "strong_event_count": 4
+      },
+      {
+        "year": 2017,
+        "strong_event_count": 4
+      },
+      {
+        "year": 2018,
+        "strong_event_count": 2
+      },
+      {
+        "year": 2019,
+        "strong_event_count": 1
+      },
+      {
+        "year": 2020,
+        "strong_event_count": 2
+      },
+      {
+        "year": 2021,
+        "strong_event_count": 2
+      },
+      {
+        "year": 2022,
+        "strong_event_count": 6
+      },
+      {
+        "year": 2023,
+        "strong_event_count": 6
+      },
+      {
+        "year": 2024,
+        "strong_event_count": 6
+      },
+      {
+        "year": 2025,
+        "strong_event_count": 2
+      },
+      {
+        "year": 2026,
+        "strong_event_count": 2
+      }
+    ]
+  },
+  "regional_concentration": [
+    {
+      "region_code": "MX_NORTH",
+      "event_count_total": 24175,
+      "strong_event_count": 29,
+      "max_magnitude": 7.2,
+      "mean_magnitude": 3.004409052660323,
+      "reference_geography": "Baja California / Gulf of California"
+    },
+    {
+      "region_code": "MX_SOUTH",
+      "event_count_total": 17400,
+      "strong_event_count": 116,
+      "max_magnitude": 8.2,
+      "mean_magnitude": 4.186389655172413,
+      "reference_geography": "Oaxaca"
+    },
+    {
+      "region_code": "MX_CENTRAL",
+      "event_count_total": 1694,
+      "strong_event_count": 34,
+      "max_magnitude": 8.0,
+      "mean_magnitude": 4.2808146399055484,
+      "reference_geography": "Jalisco - Colima"
+    }
+  ]
+}

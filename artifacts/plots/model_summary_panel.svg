@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760" role="img" aria-label="Model and publication posture summary">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07101f"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.24"/></filter>
+    <style>.title{font:800 46px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}.sub{font:400 20px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}.k{font:800 20px 'Segoe UI',Arial,sans-serif;fill:#1e293b}.v{font:900 42px 'Segoe UI',Arial,sans-serif;fill:#0f172a}.b{font:700 22px 'Segoe UI',Arial,sans-serif;fill:#e5e7eb}.small{font:500 17px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}</style>
+  </defs>
+  <rect width="1500" height="760" rx="34" fill="url(#bg)"/>
+  <text x="72" y="80" class="title">Model and Publication Posture</text>
+  <text x="72" y="118" class="sub">Compact reading aid for model maturity, evidence boundaries, and safe public interpretation.</text>
+  <g filter="url(#shadow)">
+    <rect x="85" y="180" width="280" height="142" rx="22" fill="#dbeafe"/>
+    <rect x="405" y="180" width="280" height="142" rx="22" fill="#dcfce7"/>
+    <rect x="725" y="180" width="280" height="142" rx="22" fill="#fef3c7"/>
+    <rect x="1045" y="180" width="365" height="142" rx="22" fill="#f3e8ff"/>
+  </g>
+  <text x="120" y="232" class="k">Curated events</text><text x="120" y="285" class="v">43,269</text>
+  <text x="440" y="232" class="k">Coverage years</text><text x="440" y="285" class="v">42.27</text>
+  <text x="760" y="232" class="k">Strongest magnitude</text><text x="760" y="285" class="v">8.20</text>
+  <text x="1080" y="232" class="k">Evaluation posture</text><text x="1080" y="285" class="v" style="font-size:34px">publication-limited</text>
+  <rect x="90" y="410" width="1320" height="190" rx="26" fill="#111827" stroke="#1f2937"/>
+  <text x="130" y="470" class="b">Current public interpretation boundaries</text>
+  <text x="130" y="520" class="small">- No official warning or deterministic prediction claim.</text>
+  <text x="130" y="560" class="small">- Public outputs are descriptive, probabilistic, and evidence-bounded.</text>
+  <text x="130" y="600" class="small">- Missing evidence is disclosed as limitation instead of replaced by speculation.</text>
+</svg>

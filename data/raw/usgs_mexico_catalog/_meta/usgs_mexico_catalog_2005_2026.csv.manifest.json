@@ -1,0 +1,105 @@
+{
+  "source": "USGS Earthquake Catalog API",
+  "generated_at_utc": "2026-04-11T06:10:37.894991+00:00",
+  "start_year": 2005,
+  "end_date": "2026-04-11",
+  "min_magnitude": 2.5,
+  "bbox": {
+    "minlatitude": 14.0,
+    "maxlatitude": 33.0,
+    "minlongitude": -118.0,
+    "maxlongitude": -86.0
+  },
+  "records": 24172,
+  "yearly_stats": [
+    {
+      "year": 2005,
+      "rows": 1023
+    },
+    {
+      "year": 2006,
+      "rows": 1109
+    },
+    {
+      "year": 2007,
+      "rows": 1337
+    },
+    {
+      "year": 2008,
+      "rows": 1726
+    },
+    {
+      "year": 2009,
+      "rows": 618
+    },
+    {
+      "year": 2010,
+      "rows": 4460
+    },
+    {
+      "year": 2011,
+      "rows": 1101
+    },
+    {
+      "year": 2012,
+      "rows": 1219
+    },
+    {
+      "year": 2013,
+      "rows": 988
+    },
+    {
+      "year": 2014,
+      "rows": 761
+    },
+    {
+      "year": 2015,
+      "rows": 514
+    },
+    {
+      "year": 2016,
+      "rows": 465
+    },
+    {
+      "year": 2017,
+      "rows": 961
+    },
+    {
+      "year": 2018,
+      "rows": 543
+    },
+    {
+      "year": 2019,
+      "rows": 558
+    },
+    {
+      "year": 2020,
+      "rows": 748
+    },
+    {
+      "year": 2021,
+      "rows": 1134
+    },
+    {
+      "year": 2022,
+      "rows": 1276
+    },
+    {
+      "year": 2023,
+      "rows": 1189
+    },
+    {
+      "year": 2024,
+      "rows": 1238
+    },
+    {
+      "year": 2025,
+      "rows": 903
+    },
+    {
+      "year": 2026,
+      "rows": 301
+    }
+  ],
+  "csv_path": "C:\Users\relativomec\...\\data\\raw\\usgs_mexico_catalog\\usgs_mexico_catalog_2005_2026.csv"
+}

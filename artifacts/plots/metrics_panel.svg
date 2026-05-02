@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780" role="img" aria-label="Executive metrics panel">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07101f"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.26"/></filter>
+    <style>.title{font:800 46px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}.sub{font:400 20px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}.k{font:800 20px 'Segoe UI',Arial,sans-serif;fill:#cbd5e1}.v{font:900 54px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}.n{font:500 16px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}.badge{font:800 26px 'Segoe UI',Arial,sans-serif;fill:#fde68a}.path{font:700 20px 'Segoe UI',Arial,sans-serif;fill:#bfdbfe}</style>
+  </defs>
+  <rect width="1500" height="780" rx="34" fill="url(#bg)"/>
+  <circle cx="1300" cy="120" r="210" fill="#2563eb" opacity=".12"/>
+  <text x="72" y="80" class="title">Executive Metrics Panel</text>
+  <text x="72" y="118" class="sub">Persisted indicators used across the current bounded publication surface.</text>
+  <g filter="url(#shadow)">
+    <rect x="80" y="175" width="310" height="190" rx="24" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="420" y="175" width="310" height="190" rx="24" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="760" y="175" width="310" height="190" rx="24" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="1100" y="175" width="310" height="190" rx="24" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="160" y="450" width="540" height="190" rx="26" fill="#101b36" stroke="#22325f"/>
+    <rect x="800" y="450" width="540" height="190" rx="26" fill="#101b36" stroke="#22325f"/>
+  </g>
+  <text x="115" y="232" class="k">Curated events</text><text x="115" y="305" class="v">43,269</text><text x="115" y="338" class="n">Historical records persisted locally</text>
+  <text x="455" y="232" class="k">Coverage years</text><text x="455" y="305" class="v">42.27</text><text x="455" y="338" class="n">Current bounded release span</text>
+  <text x="795" y="232" class="k">Strongest magnitude</text><text x="795" y="305" class="v">8.20</text><text x="795" y="338" class="n">Highest represented magnitude</text>
+  <text x="1135" y="232" class="k">Strong events >= 6.0</text><text x="1135" y="305" class="v">179</text><text x="1135" y="338" class="n">Descriptive threshold, not alerting</text>
+  <text x="205" y="512" class="k">Model run posture</text><text x="205" y="565" class="badge">publication-limited baseline</text><text x="205" y="604" class="n">Intentional disclosure of bounded prototype maturity</text>
+  <text x="845" y="512" class="k">Authority DB</text><text x="845" y="565" class="path">seismic_prototype.db</text><text x="845" y="604" class="n">SQLite structured authority - PSRP/artifacts/sqlite/seismic_prototype.db</text>
+</svg>

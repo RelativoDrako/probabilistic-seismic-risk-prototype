@@ -1,0 +1,58 @@
+﻿from __future__ import annotations
+
+"""
+Compatibility contracts for the local-first seismic prototype.
+
+This module centralizes canonical table names, manifest metadata, and
+compatibility aliases expected by staged modules.
+"""
+
+# Manifest compatibility
+MANIFEST_VERSION = "1.0"
+
+# Canonical table names
+TABLE_SOURCES = "sources"
+TABLE_INGEST_BATCHES = "ingest_batches"
+TABLE_RAW_ASSET_MANIFEST = "raw_asset_manifest"
+TABLE_CURATED_EVENTS = "curated_events"
+TABLE_FEATURE_GENERATIONS = "feature_generations"
+TABLE_REGION_FEATURES = "region_features"
+TABLE_PIPELINE_RUN_JOURNAL = "pipeline_run_journal"
+
+# Compatibility aliases for older staged modules
+TABLE_SOURCE_REGISTRY = TABLE_SOURCES
+TABLE_BATCH_REGISTRY = TABLE_INGEST_BATCHES
+TABLE_RAW_MANIFEST = TABLE_RAW_ASSET_MANIFEST
+TABLE_EVENT_CURATION = TABLE_CURATED_EVENTS
+TABLE_FEATURE_STORE = TABLE_REGION_FEATURES
+TABLE_FEATURE_REGISTRY = TABLE_FEATURE_GENERATIONS
+TABLE_PIPELINE_JOURNAL = TABLE_PIPELINE_RUN_JOURNAL
+
+ALL_TABLES = [
+    TABLE_SOURCES,
+    TABLE_INGEST_BATCHES,
+    TABLE_RAW_ASSET_MANIFEST,
+    TABLE_CURATED_EVENTS,
+    TABLE_FEATURE_GENERATIONS,
+    TABLE_REGION_FEATURES,
+    TABLE_PIPELINE_RUN_JOURNAL,
+]
+
+__all__ = [
+    "MANIFEST_VERSION",
+    "TABLE_SOURCES",
+    "TABLE_INGEST_BATCHES",
+    "TABLE_RAW_ASSET_MANIFEST",
+    "TABLE_CURATED_EVENTS",
+    "TABLE_FEATURE_GENERATIONS",
+    "TABLE_REGION_FEATURES",
+    "TABLE_PIPELINE_RUN_JOURNAL",
+    "TABLE_SOURCE_REGISTRY",
+    "TABLE_BATCH_REGISTRY",
+    "TABLE_RAW_MANIFEST",
+    "TABLE_EVENT_CURATION",
+    "TABLE_FEATURE_STORE",
+    "TABLE_FEATURE_REGISTRY",
+    "TABLE_PIPELINE_JOURNAL",
+    "ALL_TABLES",
+]

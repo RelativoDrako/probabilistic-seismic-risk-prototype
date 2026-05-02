@@ -1,0 +1,36 @@
+{
+  "target_definition": "target=1 when a spatial window has at least one future event within 30 days with magnitude >= 4.5",
+  "current_model": {
+    "model": "baseline_random_forest",
+    "accuracy": 0.9591836734693877,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": {
+      "tn": 10810,
+      "fp": 0,
+      "fn": 460,
+      "tp": 0
+    },
+    "positive_prediction_rate": 0.0,
+    "prevalence": 0.04081632653061224,
+    "pr_auc": 0.11336076625932141
+  },
+  "always_negative": {
+    "accuracy": 0.9591836734693877,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": {
+      "tn": 10810,
+      "fp": 0,
+      "fn": 460,
+      "tp": 0
+    },
+    "positive_prediction_rate": 0.0,
+    "prevalence": 0.04081632653061224,
+    "pr_auc": null
+  }
+}

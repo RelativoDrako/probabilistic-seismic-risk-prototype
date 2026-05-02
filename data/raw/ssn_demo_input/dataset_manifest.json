@@ -1,0 +1,6 @@
+{
+  "source": "USGS Earthquake API",
+  "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+  "records": 3000,
+  "generated_at": "2026-04-09T14:49:39.092010+00:00"
+}

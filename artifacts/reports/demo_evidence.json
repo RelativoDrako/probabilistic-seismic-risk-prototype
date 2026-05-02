@@ -1,0 +1,18 @@
+{
+  "artifact": "demo_evidence",
+  "curated_events_count": 43269,
+  "coverage_years": 42.27,
+  "strongest_magnitude": 8.2,
+  "strong_events_threshold_count": 179,
+  "local_authority_path": "C:\\Users\\relativomec\\...\\artifacts\\sqlite\\seismic_prototype.db",
+  "plots": [
+    "artifacts/plots/pipeline_trace.png",
+    "artifacts/plots/metrics_panel.png",
+    "artifacts/plots/probabilistic_risk_map.png",
+    "artifacts/plots/risk_heatmap.png",
+    "artifacts/plots/regional_event_counts.png",
+    "artifacts/plots/magnitude_distribution.png",
+    "artifacts/plots/model_summary_panel.png"
+  ],
+  "boundary": "publication-safe bounded prototype surface"
+}

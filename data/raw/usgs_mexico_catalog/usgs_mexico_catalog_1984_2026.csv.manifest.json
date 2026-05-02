@@ -1,0 +1,189 @@
+{
+  "source": "USGS Earthquake Catalog API",
+  "generated_at_utc": "2026-04-12T18:27:46.278749+00:00",
+  "start_year": 1984,
+  "end_date": "2026-04-12",
+  "min_magnitude": 2.5,
+  "bbox": {
+    "minlatitude": 14.0,
+    "maxlatitude": 33.0,
+    "minlongitude": -118.0,
+    "maxlongitude": -86.0
+  },
+  "records": 39427,
+  "yearly_stats": [
+    {
+      "year": 1984,
+      "rows": 544
+    },
+    {
+      "year": 1985,
+      "rows": 604
+    },
+    {
+      "year": 1986,
+      "rows": 1050
+    },
+    {
+      "year": 1987,
+      "rows": 1065
+    },
+    {
+      "year": 1988,
+      "rows": 921
+    },
+    {
+      "year": 1989,
+      "rows": 534
+    },
+    {
+      "year": 1990,
+      "rows": 322
+    },
+    {
+      "year": 1991,
+      "rows": 433
+    },
+    {
+      "year": 1992,
+      "rows": 365
+    },
+    {
+      "year": 1993,
+      "rows": 562
+    },
+    {
+      "year": 1994,
+      "rows": 299
+    },
+    {
+      "year": 1995,
+      "rows": 326
+    },
+    {
+      "year": 1996,
+      "rows": 350
+    },
+    {
+      "year": 1997,
+      "rows": 535
+    },
+    {
+      "year": 1998,
+      "rows": 817
+    },
+    {
+      "year": 1999,
+      "rows": 987
+    },
+    {
+      "year": 2000,
+      "rows": 881
+    },
+    {
+      "year": 2001,
+      "rows": 1077
+    },
+    {
+      "year": 2002,
+      "rows": 1498
+    },
+    {
+      "year": 2003,
+      "rows": 1032
+    },
+    {
+      "year": 2004,
+      "rows": 1051
+    },
+    {
+      "year": 2005,
+      "rows": 1023
+    },
+    {
+      "year": 2006,
+      "rows": 1109
+    },
+    {
+      "year": 2007,
+      "rows": 1337
+    },
+    {
+      "year": 2008,
+      "rows": 1726
+    },
+    {
+      "year": 2009,
+      "rows": 618
+    },
+    {
+      "year": 2010,
+      "rows": 4460
+    },
+    {
+      "year": 2011,
+      "rows": 1101
+    },
+    {
+      "year": 2012,
+      "rows": 1219
+    },
+    {
+      "year": 2013,
+      "rows": 988
+    },
+    {
+      "year": 2014,
+      "rows": 761
+    },
+    {
+      "year": 2015,
+      "rows": 514
+    },
+    {
+      "year": 2016,
+      "rows": 465
+    },
+    {
+      "year": 2017,
+      "rows": 961
+    },
+    {
+      "year": 2018,
+      "rows": 543
+    },
+    {
+      "year": 2019,
+      "rows": 558
+    },
+    {
+      "year": 2020,
+      "rows": 748
+    },
+    {
+      "year": 2021,
+      "rows": 1134
+    },
+    {
+      "year": 2022,
+      "rows": 1276
+    },
+    {
+      "year": 2023,
+      "rows": 1189
+    },
+    {
+      "year": 2024,
+      "rows": 1238
+    },
+    {
+      "year": 2025,
+      "rows": 903
+    },
+    {
+      "year": 2026,
+      "rows": 303
+    }
+  ],
+  "csv_path": "C:\Users\relativomec\...\\data\\raw\\usgs_mexico_catalog\\usgs_mexico_catalog_1984_2026.csv"
+}

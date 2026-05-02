@@ -1,0 +1,19 @@
+{
+  "model_name": "baseline_random_forest",
+  "random_state": 42,
+  "model_path": "C:\Users\relativomec\...\\artifacts\\models\\baseline_model.joblib",
+  "dataset_rows": 28175,
+  "train_rows": 16905,
+  "test_rows": 11270,
+  "split_rule": "random_holdout_test_size_0.4_stratified_if_possible",
+  "target_definition": "target=1 when a spatial window has at least one future event within 30 days with magnitude >= 4.5",
+  "feature_columns": [
+    "event_count",
+    "max_magnitude",
+    "mean_magnitude",
+    "mean_depth_km",
+    "days_since_last_event"
+  ],
+  "positive_ratio": 0.040851818988464954,
+  "negative_ratio": 0.9591481810115351
+}

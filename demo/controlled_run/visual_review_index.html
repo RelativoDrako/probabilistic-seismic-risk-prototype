@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PSRP Executive Controlled Review</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;--ink:#172033;--muted:#5f6f86;--soft:#8a99ad;--card:#ffffff;--line:#d9e2ef;
+      --navy:#0b1f35;--blue:#2563eb;--cyan:#0891b2;--green:#059669;--amber:#d97706;--red:#dc2626;
+      --shadow:0 22px 70px rgba(15,23,42,.12);--radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at top left,rgba(37,99,235,.10),transparent 30%),linear-gradient(180deg,#f8fafc 0%,#eef3f9 100%);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.62}
+    main{max-width:1240px;margin:0 auto;padding:54px 28px 80px}
+    h1{font-size:clamp(2.2rem,4.8vw,4.4rem);line-height:1.02;margin:0 0 16px;letter-spacing:-.045em;color:#0f172a}
+    h2{font-size:clamp(1.45rem,2.5vw,2.35rem);line-height:1.12;margin:0 0 12px;letter-spacing:-.025em;color:#111827}
+    h3{font-size:1.05rem;margin:0 0 8px;color:#0f172a}
+    p{margin:0 0 14px}.lead{max-width:990px;color:#46566c;font-size:1.17rem}.muted{color:var(--muted)}
+    .kicker{color:#315b95;font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:850;margin-bottom:10px}
+    .hero,.split{display:grid;grid-template-columns:1.04fr .96fr;gap:28px;align-items:stretch;margin:30px 0 24px}
+    .card,.panel,.brief-card{background:rgba(255,255,255,.92);border:1px solid rgba(148,163,184,.28);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card{padding:30px}.card p{color:var(--muted)}
+    .decision-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.decision{padding:14px;border-radius:16px;background:#f8fafc;border:1px solid var(--line)}.decision span{display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:#64748b;font-weight:800}.decision b{font-size:1rem;color:#0f172a}
+    img{max-width:100%;display:block}.shot{width:100%;border-radius:18px;border:1px solid rgba(15,23,42,.10);background:#0b1020;box-shadow:0 18px 45px rgba(15,23,42,.16)}
+    .caption{font-size:.88rem;color:#6b7b90;margin-top:10px}.nav{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0 32px}.nav a{color:#123b72;text-decoration:none;font-size:.88rem;font-weight:750;padding:8px 12px;border:1px solid #c9d9ee;border-radius:999px;background:#fff}.nav a:hover{border-color:#93c5fd;background:#eff6ff}
+    .brief-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0 34px}.brief-card{padding:18px}.brief-card p{font-size:.95rem;color:var(--muted)}.brief-card strong{color:#111827}
+    .story{display:grid;gap:24px}.panel{overflow:hidden}.panel-inner{display:grid;grid-template-columns:.92fr 1.08fr;gap:0}.panel-text{padding:28px}.panel-visual{padding:24px;background:linear-gradient(180deg,#f8fafc,#eef4fb);border-left:1px solid var(--line)}
+    .statement{font-size:1.03rem;color:#334155;border-left:5px solid var(--blue);padding-left:14px;margin:10px 0 18px}.statement.green{border-color:var(--green)}.statement.amber{border-color:var(--amber)}.statement.red{border-color:var(--red)}.statement.cyan{border-color:var(--cyan)}
+    .readout{display:grid;gap:10px;margin-top:18px}.readrow{display:grid;grid-template-columns:132px 1fr;gap:12px;padding:11px 0;border-top:1px solid #e5edf7}.readrow span{font-size:.75rem;text-transform:uppercase;letter-spacing:.09em;color:#6f8198;font-weight:850}.readrow b{font-size:.96rem;color:#172033;font-weight:650}.boundary{margin-top:16px;padding:13px 14px;border-radius:16px;background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;font-weight:700}.boundary.blue{background:#eff6ff;border-color:#bfdbfe;color:#1e3a8a}.boundary.green{background:#ecfdf5;border-color:#a7f3d0;color:#064e3b}.boundary.red{background:#fef2f2;border-color:#fecaca;color:#7f1d1d}
+    .map-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.map-grid .wide{grid-column:1 / -1}.image-card{padding:14px;border:1px solid var(--line);background:#fff;border-radius:20px;box-shadow:0 14px 35px rgba(15,23,42,.08)}
+    .authority{padding:30px}.authority-layout{display:grid;grid-template-columns:1fr;gap:20px}.authority-visual{padding:18px;background:#07111f;border-radius:22px;border:1px solid rgba(15,23,42,.12);box-shadow:0 24px 64px rgba(15,23,42,.18)}.authority-visual img{width:100%;border-radius:14px}.authority-text{display:grid;grid-template-columns:.95fr 1.05fr;gap:22px;align-items:start}
+    .mini-table{width:100%;border-collapse:collapse;font-size:.9rem;color:#475569;background:#fff;border-radius:14px;overflow:hidden}.mini-table th,.mini-table td{border:1px solid #e2e8f0;padding:10px 11px;vertical-align:top}.mini-table th{background:#f8fafc;color:#0f172a;text-align:left;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+    .close{margin-top:26px;padding:26px;border-radius:var(--radius);background:linear-gradient(135deg,#0b1f35,#172554);color:#e5edf8;box-shadow:var(--shadow)}.close h2{color:#fff}.close p{color:#cbd5e1}.close-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.close-card{border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:15px;background:rgba(255,255,255,.06)}.close-card span{display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:#93c5fd;font-weight:850;margin-bottom:6px}.close-card b{color:#fff}
+    footer{margin-top:30px;color:#64748b;font-size:.92rem;border-top:1px solid #d8e2ef;padding-top:18px}
+    @media(max-width:1020px){.hero,.split,.panel-inner,.brief-grid,.close-grid,.authority-text{grid-template-columns:1fr}.panel-visual{border-left:0;border-top:1px solid var(--line)}.decision-strip{grid-template-columns:1fr}.map-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="kicker">Executive interpretation report</div>
+    <h1>PSRP Executive Controlled Review</h1>
+    <p class="lead">A curated executive readout of the PSRP web surface. This page does not mirror the application section by section; it explains the professional argument behind the prototype: local-first authority, regional interpretation, bounded analytics, and publication-safe claims.</p>
+  </header>
+
+  <section class="hero" id="executive-readout" aria-label="Executive readout">
+    <div class="card">
+      <div class="kicker">Executive readout</div>
+      <h2>What a reviewer should understand first</h2>
+      <p>PSRP is strongest when read as an engineering artifact, not as a map demo. Its value is the controlled path from curated evidence to SQLite authority, derived regional context, bounded model posture, and a public surface that avoids unsupported warning-system claims.</p>
+      <div class="decision-strip">
+        <div class="decision"><span>Architecture</span><b>local-first prototype with SQLite authority</b></div>
+        <div class="decision"><span>Analytics</span><b>probabilistic regional context, not prediction</b></div>
+        <div class="decision"><span>Governance</span><b>bounded claims and reproducible artifacts</b></div>
+      </div>
+      <div class="boundary blue">Publication signal: the visible evidence surface reports 43,269 curated events, 1984-01-02 to 2026-04-11 coverage, strongest magnitude 8.20, a 30-day feature window, and a publication-limited baseline model posture.</div>
+    </div>
+    <div class="card">
+      <img class="shot" src="screenshots/01_executive_overview_current.jpg" alt="Current executive overview capture">
+      <p class="caption">Current entry surface used as a posture reference: scale, coverage, model status, and non-claim boundary are visible before the reader explores details.</p>
+    </div>
+  </section>
+
+  <nav class="nav" aria-label="Report navigation">
+    <a href="#executive-readout">Executive readout</a>
+    <a href="#technical-authority">Technical authority</a>
+    <a href="#map-interpretation">Map interpretation</a>
+    <a href="#regional-reading">Regional reading</a>
+    <a href="#model-posture">Model posture</a>
+    <a href="#integration">Integration</a>
+    <a href="#publication">Executive conclusion</a>
+  </nav>
+
+  <section class="brief-grid" aria-label="Audience interpretation">
+    <div class="brief-card"><h3>For recruiters</h3><p><strong>Read this as:</strong> a compact proof that the portfolio artifact is polished, bounded, and professionally communicated without exaggerated claims.</p></div>
+    <div class="brief-card"><h3>For engineering reviewers</h3><p><strong>Read this as:</strong> an architecture surface where raw evidence, structured authority, derived features, evaluation, and publication are deliberately separated.</p></div>
+    <div class="brief-card"><h3>For publication review</h3><p><strong>Read this as:</strong> an evidence-based interpretation layer that connects current dataset scale, technical authority, bounded model posture, and explicit non-warning semantics.</p></div>
+  </section>
+
+  <section class="panel authority" id="technical-authority">
+    <div class="kicker">01 / Technical authority</div>
+    <h2>Traceability is the core credibility mechanism</h2>
+    <div class="authority-layout">
+      <div class="authority-visual">
+        <img src="screenshots/08_methodology_traceability_cycle.svg" alt="Methodology and traceability cycle diagram">
+      </div>
+      <div class="authority-text">
+        <div>
+          <p class="statement blue">The most important professional argument is not the map alone. It is the controlled lineage from source evidence to structured authority, derived regional features, bounded evaluation, and publication-safe communication.</p>
+          <div class="boundary blue">Acceptance signal: the methodology should read like auditable engineering, not over-documentation.</div>
+        </div>
+        <table class="mini-table" aria-label="Traceability interpretation table">
+          <thead><tr><th>Layer</th><th>Executive meaning</th><th>Credibility contribution</th></tr></thead>
+          <tbody>
+            <tr><td>Raw evidence</td><td>Source material remains distinguishable from derived outputs.</td><td>Supports auditability and safe reruns.</td></tr>
+            <tr><td>SQLite authority</td><td>Structured local state becomes the prototype source of truth.</td><td>Reduces ambiguity and avoids cloud dependency.</td></tr>
+            <tr><td>Feature / region layer</td><td>Analysis is built through explicit transformations.</td><td>Explains why maps and metrics are reproducible.</td></tr>
+            <tr><td>Evaluation posture</td><td>Known limits are surfaced rather than hidden.</td><td>Prevents unsupported model claims.</td></tr>
+            <tr><td>Publication surface</td><td>Results are communicated with non-claims and bounded scope.</td><td>Protects against warning-system confusion.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <article class="panel" id="map-interpretation">
+      <div class="panel-inner">
+        <div class="panel-text">
+          <div class="kicker">02 / Geographic interpretation</div>
+          <h2>Maps as executive evidence, not decoration</h2>
+          <p class="statement green">The maps help a reader understand concentration patterns, regional separation, and tectonic framing without converting the prototype into an official geophysical product.</p>
+          <div class="readout">
+            <div class="readrow"><span>Observe</span><b>Pacific-margin and Gulf-of-California concentration become visually clear, while event-level evidence and regional summaries remain separated.</b></div>
+            <div class="readrow"><span>Decision value</span><b>The visuals justify regional aggregation instead of treating Mexico as a uniform analytical surface.</b></div>
+            <div class="readrow"><span>Quality signal</span><b>Clean tooltip fields and separated map layers protect publication credibility.</b></div>
+          </div>
+          <div class="boundary">Boundary: these maps support descriptive prototype reading only; they are not official hazard maps or authoritative plate-boundary products.</div>
+        </div>
+        <div class="panel-visual map-grid">
+          <div class="image-card wide"><img class="shot" src="screenshots/03_mexico_map_interpreted.jpg" alt="Mexico executive map with normalized regional tooltip"><p class="caption">Executive map: concentration, selected regional prominence, and normalized tooltip semantics.</p></div>
+          <div class="image-card"><img class="shot" src="screenshots/04_recorded_events_map.jpg" alt="Recorded events map"><p class="caption">Recorded events: supporting event-level evidence, intentionally separated from aggregate regional reading.</p></div>
+          <div class="image-card"><img class="shot" src="screenshots/05_tectonic_context_schematic.jpg" alt="Tectonic context schematic"><p class="caption">Tectonic context: an engineering aid for interpretation, not a formal boundary authority.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel" id="regional-reading">
+      <div class="panel-inner">
+        <div class="panel-text">
+          <div class="kicker">03 / Regional interpretation</div>
+          <h2>From national pattern to selected-region reading</h2>
+          <p class="statement cyan">The regional view is the bridge between map impression and defensible analytical explanation. It turns national concentration into one selected prototype band without presenting it as official zoning.</p>
+          <div class="readout">
+            <div class="readrow"><span>Observe</span><b>Reference geography, political division, magnitude statistics, event count, and risk index are read as a regional summary.</b></div>
+            <div class="readrow"><span>Implication</span><b>This supports a portfolio narrative around data modeling, regional aggregation, and bounded AI/ML-oriented communication.</b></div>
+            <div class="readrow"><span>Boundary</span><b>Prototype bands are semantic aggregation units; they do not replace civil-protection or scientific zoning.</b></div>
+          </div>
+        </div>
+        <div class="panel-visual">
+          <img class="shot" src="screenshots/06_regional_reading_content.jpg" alt="Regional risk view content capture">
+          <p class="caption">Content-only capture avoids stale sidebar details and focuses the reader on the analytical drill-down.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel" id="model-posture">
+      <div class="panel-inner">
+        <div class="panel-text">
+          <div class="kicker">04 / Analytical posture</div>
+          <h2>Bounded evaluation is stronger than unsupported polish</h2>
+          <p class="statement red">The evaluation section is valuable because it states what is available, what is limited, and what the current model posture can support.</p>
+          <div class="readout">
+            <div class="readrow"><span>Observe</span><b>Publication-limited badges and evaluation cards make constraints visible instead of hiding them behind confident language.</b></div>
+            <div class="readrow"><span>Decision value</span><b>The project shows familiarity with model evaluation surfaces while maintaining claim discipline.</b></div>
+            <div class="readrow"><span>Boundary</span><b>Evaluation supports traceability and communication maturity; it is not an earthquake-prediction claim.</b></div>
+          </div>
+        </div>
+        <div class="panel-visual">
+          <img class="shot" src="screenshots/07_model_evaluation_content.jpg" alt="Model evaluation content capture">
+          <p class="caption">A bounded model posture protects the repository from overclaiming while preserving analytical value.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel" id="integration">
+      <div class="panel-inner">
+        <div class="panel-text">
+          <div class="kicker">05 / Runtime and integration</div>
+          <h2>API surface as controlled inspection path</h2>
+          <p class="statement green">The API is best interpreted as a local read-oriented integration surface: useful for inspection, automation, and future extension, but not presented as a production backend.</p>
+          <div class="readout">
+            <div class="readrow"><span>Observe</span><b>Endpoints expose summary, region, and evaluation payloads as structured read surfaces.</b></div>
+            <div class="readrow"><span>Implication</span><b>The project separates data authority, web presentation, and integration access.</b></div>
+            <div class="readrow"><span>Boundary</span><b>LAN/local controlled inspection is current scope; cloud and production operations remain future projection.</b></div>
+          </div>
+        </div>
+        <div class="panel-visual">
+          <img class="shot" src="screenshots/09_api_surface_content.jpg" alt="API integration surface content capture">
+          <p class="caption">The API surface supports review and reproducibility without expanding operational claims.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel" id="publication">
+      <div class="panel-inner">
+        <div class="panel-text">
+          <div class="kicker">06 / Executive conclusion</div>
+          <h2>Evidence-based publication conclusion</h2>
+          <p class="statement amber">PSRP demonstrates a bounded local-first architecture for probabilistic regional seismic-risk context: 43,269 curated events, 42.27 years of coverage, strongest magnitude 8.20, 179 strong events at magnitude 6.0 or higher, and a 30-day feature window organized through a SQLite authority surface.</p>
+          <div class="readout">
+            <div class="readrow"><span>Evidence base</span><b>The visible dataset summary supports national-scale reading while preserving a clear distinction between curated historical events and derived regional interpretation.</b></div>
+            <div class="readrow"><span>Technical value</span><b>The strongest professional contribution is traceability: raw evidence, SQLite authority, derived features, regional aggregation, model posture, and publication-safe presentation remain separated.</b></div>
+            <div class="readrow"><span>Boundary</span><b>The prototype communicates probabilistic context only; it does not claim official warning capability, deterministic earthquake prediction, or production operational maturity.</b></div>
+          </div>
+        </div>
+        <div class="panel-visual">
+          <img class="shot" src="screenshots/10_future_projection_content.jpg" alt="Future projection content capture">
+          <p class="caption">Roadmap interpretation: ambitious but explicitly controlled.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="close" aria-label="Final publication readout">
+    <h2>Executive close</h2>
+    <p>The visual review index concludes that the prototype's publication value comes from disciplined evidence handling: a current curated dataset, local SQLite authority, interpretable regional aggregation, bounded evaluation posture, and explicit separation from emergency-warning or deterministic-prediction claims.</p>
+    <div class="close-grid">
+      <div class="close-card"><span>Strength</span><b>Traceable local-first architecture with structured authority and derived publication artifacts.</b></div>
+      <div class="close-card"><span>Constraint</span><b>Prototype-grade findings only; no official warning, deterministic prediction, or production operational maturity.</b></div>
+      <div class="close-card"><span>Continuity</span><b>Future ML, canonical geometry, larger datasets, and optional cloud augmentation remain roadmap extensions, not current dependencies.</b></div>
+    </div>
+  </section>
+
+  <footer>
+    PSRP Executive Controlled Review - interpretive executive report for the visible prototype surface. It summarizes evidence, traceability, and bounded claims without extending operational scope.
+  </footer>
+</main>
+</body>
+</html>

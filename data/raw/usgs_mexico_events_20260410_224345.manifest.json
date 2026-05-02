@@ -1,0 +1,17 @@
+{
+  "source": "USGS Earthquake API",
+  "query": {
+    "format": "geojson",
+    "starttime": "2023-01-01",
+    "endtime": "2026-04-10",
+    "minmagnitude": 2.5,
+    "limit": 5000,
+    "minlatitude": 14.0,
+    "maxlatitude": 33.5,
+    "minlongitude": -118.5,
+    "maxlongitude": -86.0
+  },
+  "records": 3830,
+  "generated_at_utc": "2026-04-10T22:43:46.738157+00:00",
+  "csv_path": "C:\Users\relativomec\...\\data\\raw\\usgs_demo_input\\usgs_mexico_events_20260410_224345.csv"
+}

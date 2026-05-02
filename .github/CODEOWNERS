@@ -1,0 +1,26 @@
+# Public surface
+/README.md @RelativoDrako
+/DISCLAIMER.md @RelativoDrako
+/HOW_TO_RUN.md @RelativoDrako
+/HOW_TO_READ_REPO.md @RelativoDrako
+/roadmap.md @RelativoDrako
+
+# Canonical docs
+/docs/** @RelativoDrako
+/architecture/** @RelativoDrako
+
+# Data authority and runtime
+/db/** @RelativoDrako
+/src/api/** @RelativoDrako
+/src/web/** @RelativoDrako
+/scripts/** @RelativoDrako
+/models/** @RelativoDrako
+/evaluation/** @RelativoDrako
+
+# Controlled artifacts
+/artifacts/** @RelativoDrako
+/demo/** @RelativoDrako
+
+# Workflow governance
+/.github/workflows/** @RelativoDrako
+/.github/CODEOWNERS @RelativoDrako

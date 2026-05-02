@@ -1,0 +1,2 @@
+-- Plantilla generada. NO aplicar sin revisar el reporte JSON asociado.
+-- Use scripts/generate_safe_region_features_migration.py
