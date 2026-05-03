@@ -1,0 +1,65 @@
+# GENERATED FILE - do not edit manually
+name: Governance Validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  psrp-readme-boundary-check:
+    name: psrp-readme-boundary-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run psrp-readme-boundary-check
+        shell: pwsh
+        run: .\governance\templates\validators\boundary-terms-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]' -RequiredTermsJson '["local-first","warning","deterministic","production"]'
+  psrp-doc-links-check:
+    name: psrp-doc-links-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run psrp-doc-links-check
+        shell: pwsh
+        run: .\governance\templates\validators\links-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]'
+  psrp-api-surface-check:
+    name: psrp-api-surface-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run psrp-api-surface-check
+        shell: pwsh
+        run: .\governance\templates\validators\path-exists-check.ps1 -RepoRoot ${{ github.workspace }} -ExpectedPathsJson '["src/api"]'
+  psrp-web-surface-check:
+    name: psrp-web-surface-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run psrp-web-surface-check
+        shell: pwsh
+        run: .\governance\templates\validators\path-exists-check.ps1 -RepoRoot ${{ github.workspace }} -ExpectedPathsJson '["src/web"]'
+  psrp-publication-guard:
+    name: psrp-publication-guard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run psrp-publication-guard
+        shell: pwsh
+        run: .\governance\templates\validators\docs-presence-check.ps1 -RepoRoot ${{ github.workspace }} -ExpectedDocsJson '["README.md","docs"]'
+  psrp-pages-deploy:
+    name: psrp-pages-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run psrp-pages-deploy
+        shell: pwsh
+        run: .\governance\templates\validators\path-exists-check.ps1 -RepoRoot ${{ github.workspace }} -ExpectedPathsJson '["README.md","src/web"]'
