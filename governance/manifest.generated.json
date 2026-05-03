@@ -1,0 +1,24 @@
+{
+    "repo_name":  "probabilistic-seismic-risk-prototype",
+    "repo_kind":  "psrp",
+    "required_checks":  [
+                            "psrp-readme-boundary-check",
+                            "psrp-doc-links-check",
+                            "psrp-api-surface-check",
+                            "psrp-web-surface-check",
+                            "psrp-publication-guard",
+                            "psrp-pages-deploy"
+                        ],
+    "critical_paths":  [
+                           "README.md",
+                           "docs",
+                           "src/api",
+                           "src/web",
+                           ".github/workflows"
+                       ],
+    "public_surface_paths":  [
+                                 "README.md",
+                                 "docs",
+                                 "src"
+                             ]
+}

@@ -1,0 +1,17 @@
+{
+    "ruleset_name":  "main-governance",
+    "target_branch":  "main",
+    "default_branch":  "main",
+    "required_checks":  [
+                            "psrp-readme-boundary-check",
+                            "psrp-doc-links-check",
+                            "psrp-api-surface-check",
+                            "psrp-web-surface-check",
+                            "psrp-publication-guard",
+                            "psrp-pages-deploy"
+                        ],
+    "approvals_required":  1,
+    "require_codeowners_review":  true,
+    "restrict_deletions":  true,
+    "block_force_pushes":  true
+}
